@@ -1,0 +1,651 @@
+html,body{
+	font-family: Cambria;
+}
+
+/**HEADER**/
+header
+{
+	background-color: none;
+	width: 250px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: inline-block;
+	z-index: 1;
+}
+
+	.circle
+	{
+		width: 15px;
+		height: 15px;
+		background-color: gray;
+		border-radius: 7px;
+		display: inline-block;
+		margin-top: 10px;
+
+	}
+
+	 li img /**Nav bar circle img size**/
+	{
+		width: 15px;
+		height: 15px;
+		margin-top: 10px;
+	}
+		a
+		{
+			text-decoration: none;
+			font-size: 13px;
+		}
+			ul	/**Nav bar position**/
+			{
+				background-color: none;
+				position: absolute;
+				left: 32%;
+				top: 50%;
+				transform: translate( -50%, -50%);		
+			}
+				/**The pop up Section names in nav bar**/
+				.htooltip
+				{
+
+					visibility: hidden;
+	 				width: 50px;
+					color: white;
+					padding: 5px 0;
+					text-decoration: none;
+					font-weight: bold;
+					margin: 2px;
+					letter-spacing: 3px;
+					text-transform: uppercase;
+					
+				}
+					.homenav:hover .htooltip 
+					{
+			 			visibility: visible;														
+					}
+					.homenav:hover .circle
+					{								
+						background-color: white;	
+
+					}
+					
+
+
+
+/**HOME**/
+#home
+{
+	background-color: black;
+	position: relative;
+	min-height: 650px;
+/*	z-index: -100;
+*/	padding:0;
+	margin: 0;
+}
+
+
+	/**********************SLIDER ANIMATION***************************/
+	
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.slider{
+	z-index: -100;
+
+}
+.slide1 {
+  background: url("bgphoto5.jpeg")no-repeat center;
+      background-size: cover;
+    animation:fade 20s infinite;
+-webkit-animation:fade 20s infinite;
+
+} 
+.slide2 {
+  background: url("bgphoto.jpeg")no-repeat center;
+      background-size: cover;
+    animation:fade2 20s infinite;
+-webkit-animation:fade2 20s infinite;
+}
+.slide3 {
+    background: url("bgphoto6.jpeg")no-repeat center;
+      background-size: cover;
+    animation:fade3 20s infinite;
+-webkit-animation:fade3 20s infinite;
+}
+@keyframes fade 
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+
+
+/*************************************************/
+
+
+.overhome
+{
+/*	background-color: rgba(243,226,199,0.20);
+*/	z-index: 1;
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	top: 30px;
+	bottom: 30px;
+	border-radius: 20px;
+	font-family: Cambria;
+}
+	
+	#cName
+	{
+		width: 800px;
+		height: 100px;
+		position: relative;
+		top:0;
+		background-color: none;
+		font-size: 100px;
+		font-family: 'Lobster', cursive, Cambria;
+		font-weight: bold;
+		z-index: 2147483647;
+
+	}
+		.overhome h1
+		{
+			position: absolute;
+			top: 300px;
+			left: 300px;
+			background-color: none;
+			font-size: 40px;
+			font-weight: bold;
+		}
+			.overhome h2
+			{
+				position: absolute;
+				top: 350px;
+				left: 305px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+				#call
+				{
+					position: absolute;
+					top: 380px;
+					left: 300px;
+					width: 150px;
+					height: 17px;
+					border-radius: 10px;
+					background-color: brown;
+					padding: 10px;	
+				}
+					#callto
+					{
+						color: white;
+						font-size: 18px;
+					}
+
+
+/**ABOUT SECTION**/
+
+
+#about
+{
+	background: url("brown.jpg") no-repeat scroll;
+	background-size: cover;
+	height: 600px;
+	position: relative;
+
+}
+	.aboutdiv
+	{
+		width: 500px;
+		height: 100%;
+		margin-left: 50px;
+	}
+
+		.aboutdiv h1
+		{
+			font-size: 100px;
+			font-family: 'Amatic SC', cursive;
+			font-weight: bold;
+		}
+		.aboutdiv p
+		{
+			line-height: 20px;
+			
+		}
+	.aboutimage
+	{
+		position: absolute;
+		right: 0;
+		top:0;
+		width: 550px;
+		height: 450px;
+	}
+
+
+
+
+/**MENU**/
+#menu, #menu2{
+	background: url("menubackground.jpg") no-repeat scroll;
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	padding-top:100px;
+	position: relative;
+	
+}
+	.frenchdish
+	{
+		width: 600px;
+		height: 450px;
+		position: absolute;
+		left: 650px;
+		top: 200px;
+
+
+	}
+	.sushi
+	{
+		width: 500px;
+		height: 400px;
+		position: absolute;
+		left: 700px;
+		top: 700px;
+		z-index: 1;
+		
+	}	
+		.others
+		{
+			width: 500px;
+			height: 370px;
+			position: absolute;
+			left: 100px;
+			top: 450px;
+		}
+			.salad
+				{
+					width: 450px;
+					height: 350px;
+					position: absolute;
+					left: 150px;
+					top: 0;
+					
+				}
+		.dessert
+		{
+			width: 400px;
+			height: 350px;
+			position: absolute;
+			left: 700px;
+			top: 250px;
+
+		}
+		.cake
+		{
+			width: 430px;
+			height: 400px;
+			position: absolute;
+			left: 300px;
+			top: 450px;
+/*			z-index: 1;
+*/		}
+		
+.para
+{
+	width: 600px;
+	height: 100px;
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	font-size: 100px;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+}
+
+
+/**********************CAROSEL IN MODAL**********************/
+/**********************CAROSEL IN MODAL**********************/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 400px;
+    z-index: 100;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menudiv
+{
+    width: 85px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: brown;
+    visibility: visible;
+    position: relative;
+    top: 250px;
+    left: 650px;
+    padding: 10px;
+
+}
+/*#parent
+{
+    background-color: red;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    top:0;
+}
+*//*
+.frenchdish:hover .menudiv
+{
+    visibility: visible;
+}*/
+
+
+
+
+
+
+
+
+/**********************GALLERY**********************/
+
+#gallery{
+	background: linear-gradient(rgba(24, 16, 8, 0.45),rgba(24, 16, 8, 0.45)),
+	url("pbground.jpeg") no-repeat scroll;
+	background-size: cover;
+	object-fit: fill;
+	height: 700px;	
+	position: relative;
+	z-index: -1
+	padding: 0;
+}
+	.gcenterdiv
+	{
+		background-color: none;
+		width: 900px;
+		height: 100%;
+		margin: 0 auto;
+
+	}
+
+	.galimg
+	{
+
+		border: 6px solid white;
+		width: 200px; 
+		-moz-transition: all 0.1s;
+		-webkit-transition: all 0.1s;
+		transition: all 0.1s;
+
+	}
+		.galimagediv, .galimagediv1
+		{	  
+			background-color: yellow:;
+			position: relative;
+			overflow: visible;
+			width: 200px;
+			height: 130px;
+			left: 0;
+			padding-bottom: 30px;
+
+		}
+
+		.galimagediv22
+		{
+			background: url("bg2.jpeg") top left/ 200px 130px no-repeat ;
+			position: relative;
+			overflow: visible;
+			width: 200px;
+			height: 130px;
+			left: 0; 
+		}
+
+
+			.galimagediv:hover, .galimagediv1:hover .galimg 
+				{
+				  -webkit-transform: scale(1.2); 
+				    -moz-transform: scale(1.2);
+				    -o-transform: scale(1.2);
+				    transform: scale(1.2);
+				    z-index: 100;
+				    position: relative;
+				    
+			}
+								
+
+
+.section1, .section2, .section3, .section4{
+	background-color: none;
+	width: 220px;
+	height: 100%;
+	display: inline-block;
+	padding:0;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/**************************PLACE****************************/
+
+#place{
+	background-color: black;
+	min-height: 800px;
+	padding:0;
+}
+	#topdiv
+	{
+		background: linear-gradient(rgba(24, 16, 8, 0.45),rgba(24, 16, 8, 0.45)),
+		url("graybg.jpeg") center center no-repeat scroll;
+		background-size:cover;
+		width: 100%;
+		height: 150px;
+		position: relative;
+		background-color: red;
+	}
+	#bottomdiv
+	{	
+		background: url("place.jpg") center center no-repeat scroll;
+		background-size: 100%;
+		width: 100%;
+		height: 650px;
+		position: relative;
+	}
+
+
+/**********************LOCATION**********************/
+#location
+{
+	background-color: pink;
+	height: 300px;
+	margin:0;
+	padding:0;
+	z-index: -1;
+	position: relative;
+}
+	iframe
+	{
+		width: 100%;
+		height: 300px;
+		border: 0;
+	}
+		#location div
+		{
+			background-color: rgba(0, 0, 0, 0.20);
+			margin: 0 auto;
+			width: 300px;
+			height: 40px;
+			z-index: 2;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate( -50%, -50%);
+			text-align: center;
+			padding: 30px;
+			border-radius: 5px;
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+/**CONTACT US**/
+#contactus
+{
+	background: black;
+	height: 700px;	
+}
+	.cdiv2, .cdiv3
+	{
+		width: 400px;
+		height: 250px;
+		background-color:rgba(72,72,72,0.4);
+		display: inline-block;
+		-moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        margin: 20px;
+		
+	}
+
+/*********Form div******/
+
+#form-div 
+{
+	display: inline-block;
+	background-color:rgba(72,72,72,0.4);
+	padding-left:20px;
+	padding-right:20px;
+	padding-top: 25px;
+	padding-bottom:15px;
+	margin: 20px;
+	width: 300px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+	.feedback-input 
+	{
+		color:#3c3c3c;
+		font-family: Cambria;
+	  	font-weight:500;
+		font-size: 15px;
+		border-radius: 0;
+		background-color: #fbfbfb;
+		padding: 13px 13px 13px 44px;
+		width:100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	  	border: 3px solid rgba(0,0,0,0);
+	}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 20px 20px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus
+{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 20px 20px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email
+{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 20px 20px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus
+{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 20px 20px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment
+{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 20px 20px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea 
+{
+    width: 100%;
+    height: 100px;
+}
+#button-blue
+{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	border: #fbfbfb solid 4px;
+	border-radius: 3px;
+	cursor:pointer;

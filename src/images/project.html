@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+	<style type="text/css">
+		html,body{
+	font-family: Cambria;
+}
+	</style>
+
+
+</head>
+
+<body>
+
+<header> 
+	<ul>
+		<li>	<!-- home-->
+			<a class="homenav" href=#home> 
+					<div class="circle"></div> 					
+					<span class="htooltip"> HOME </span> 
+			</a>  
+		</li>	
+
+		<li> <a class="homenav" href="#about">
+					<div class="circle"> </div>  
+					<span class="htooltip"> ABOUT US </span> 
+			 </a>
+		</li>
+
+		<li> <a class="homenav" href="#menu"> 
+					<div class="circle"> </div> 
+					<span class="htooltip"> MENU </span> 
+			 </a>
+		</li>
+
+		
+
+		<li> <a class="homenav" href="#gallery"> 
+					<div class="circle"> </div>
+					<span class="htooltip"> GALLERY </span> 
+			</a>
+		</li>
+
+		<li> <a class="homenav" href="#place">
+					<div class="circle"> </div>
+					<span class="htooltip"> OUR PLACE </span>
+			 </a>
+		</li>
+
+		<li> <a class="homenav" href="#location">
+					<div class="circle"> </div>
+					<span class="htooltip"> LOCATION </span> </a>
+		</li>
+
+		<li> <a class="homenav" href="#contactus">
+					<div class="circle"> </div>
+					<span class="htooltip"> CONTACT US </span>
+			 </a>
+		</li>
+	
+		</br></br>
+	
+		<li> <a class="homenav" href="https://www.facebook.com/" > <img src="fb.svg"> <span class="htooltip"> FACEBOOK </span> </a>
+		</li>		<!-- social medias-->
+
+		<li> <a class="homenav" href="https://www.twitter.com/" > <img src="twitter.svg"> <span class="htooltip"> TWITTER </span> </a>
+		</li>
+
+		<li> <a class="homenav" href="https://www.instagram.com/instagram/" > <img src="insta.svg"> <span class="htooltip"> INSTAGRAM </span> </a>
+		</li>
+	</ul>	
+</header>
+
+<section id="home" >
+<div class='slider'>
+  <div class='slide1'></div>
+  <div class='slide2'></div>
+  <div class='slide3'></div>
+  <div class='slide4'></div>
+  <div class='slide5'></div>
+</div>
+
+<div class="overhome">
+ 		<div id="cName"> L'assiette Dujour</div>
+ 		<h1> The Finest French Cuisine and more</h1>
+ 		<h2> Best in the city. Friendly team. Stylish setting</h2>
+ 		<div id="call" >  <a href="#menu" id="callto">	Discover our menu  </a></div>
+ 		 		
+ 	</div> 	
+</section>
+
+
+<section id="about"> 
+	<div class="aboutdiv">
+		<h1> About us</h1> <br>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+	</div>
+	<img class="aboutimage" src="aboutimage.png">
+</section>
+
+<section id="menu">
+		<div class="para"> Check our menu</div>
+		<img id="click" class="frenchdish" src="edited.png">
+			 <div id="myBtn" class="menudiv"> Learn more </div>
+
+
+			 <div id="myModal" class="modal">
+      		<!-- Modal content -->
+     			<div class="modal-content">
+	        		<span class="close">×</span>
+	        		<p>Some text in the Modal..</p>
+
+     			</div>
+			</div>
+
+			<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+			</script>	
+
+
+
+
+		<img class="sushi" src="specialsushi.png">
+		<img class="others" src="others.png">
+		
+</section>
+<section id="menu2"> 
+		<img class="salad" src="salad.png">
+		<img class="dessert" src="dessert.png">
+		<img class="cake" src="cake.png">
+</section>
+
+<section id="gallery">
+	<div class="gcenterdiv">
+
+	 	<section class="section1">
+			<div class="galimagediv" > 
+				<img class="galimg" src="GALLERY\gallery1.jpg" >
+			</div> 
+			<div class="galimagediv1"  > 
+				<img class="galimg" src="GALLERY\gallery2.jpeg" >
+			</div> 
+			<div class="galimagediv" > 
+				<img class="galimg" src="GALLERY\gallery3.jpeg" >
+			</div> 
+			<div class="galimagediv1" > 
+				<img class="galimg" src="GALLERY\gallery4.jpeg" >
+			</div> 
+		</section>
+		<section class="section2">
+			<div class="galimagediv" > 
+				<img class="galimg" src="GALLERY\gallery5.jpeg" >
+			</div> 
+			<div class="galimagediv1"  > 
+				<img class="galimg" src="GALLERY\gallery6.jpg" >
+			</div> 
+			<div class="galimagediv" > 
+				<img class="galimg" src="GALLERY\gallery7.jpg" >
+			</div> 
+			<div class="galimagediv1" > 
+				<img class="galimg" src="GALLERY\gallery8.jpeg" >
+			</div> 
+		</section>
+		<section class="section3">
+			<div class="galimagediv" > 
+				<img class="galimg" src="GALLERY\gallery9.jpg" >
+			</div> 
+			<div class="galimagediv1"  > 
+				<img class="galimg" src="GALLERY\gallery10.jpeg" >
+			</div> 
+			<div class="galimagediv" > 
+				<img class="galimg" src="GALLERY\gallery11.jpg" >
+			</div> 
+			<div class="galimagediv1" > 
+				<img class="galimg" src="GALLERY\gallery12.jpg" >
+			</div> 
+		</section>
+		<section class="section4">
+			<div class="galimagediv" > 
+				<img class="galimg" src="GALLERY\gallery1.jpg" >
+			</div> 
+			<div class="galimagediv1"  > 
+				<img class="galimg" src="GALLERY\gallery1.jpg" >
+			</div> 
+			<div class="galimagediv" > 
+				<img class="galimg" src="GALLERY\gallery1.jpg" >
+			</div> 
+			<div class="galimagediv1" > 
+				<img class="galimg" src="GALLERY\gallery1.jpg" >
+			</div> 
+		</section>
+
+
+	</div>
+	
+	
+</section>
+
+
+
+<section id="place">
+
+	<div id="topdiv"></div>
+	<div id="bottomdiv"></div>
+	
+</section>
+
+<section id="location">
+	<div> 49 Sct. Torillo St, Diliman, Quezon City, 1103 Metro Manila </div>
+	<script>
+	function myMap()
+	{
+	var mapCanvas = document.getElementById("location");
+	var mapOptions = {
+	center: new google.maps.LatLng(51.5, -0.2), 
+	zoom: 10
+	}
+	var location = new google.maps.Map(mapCanvas, mapOptions);
+	}
+	</script>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3585337076966!2d121.03539451441718!3d14.635577980143276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7adb658a13f%3A0x9ba9df4f6f78782a!2s49+Sct.+Torillo+St%2C+Diliman%2C+Quezon+City%2C+1103+Metro+Manila!5e0!3m2!1sen!2sph!4v1458678317469" frameborder="0" allowfullscreen></iframe>
+
+
+</section>
+
+<section id="contactus">
+
+<div id="form-div">
+	<form class="form" id="form1">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <input type="submit" value="SEND" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+</div>
+<div class="cdiv2"></div>
+<div class="cdiv3"></div>
+	
+</section>
+
+
+
+</body>
+</html>
