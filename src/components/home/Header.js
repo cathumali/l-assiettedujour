@@ -19,8 +19,10 @@ function Header() {
             <div className="call">
               <h1 style={call_style}>L'assiette Dujour</h1>
             </div>
-            <p>The Finest French Cuisine and more </p>
-            <p> Best in the city. Friendly team. Stylish setting</p>
+            <div className="header-intro">
+              <p>The Finest French Cuisine and more </p>
+              <p> Best in the city. Friendly team. Stylish setting</p>
+            </div>
             <div className="action">
               <a href="#menu" style={action_style}>
                 {" "}

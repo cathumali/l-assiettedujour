@@ -1,3 +1,7 @@
+body,
+#about {
+  color: #000;
+}
 /*********************HEADER AND NAV*********************/
 
 header {
@@ -15,6 +19,12 @@ header li {
 }
 header a {
   text-decoration: none !important;
+}
+.header-intro {
+  margin: 40px 0;
+}
+.header-intro p {
+  margin-bottom: 0;
 }
 
 .circle {
@@ -179,3 +189,19 @@ ul	/**Nav bar position**/
 }
 
 /*********************ABOUT*********************/
+#about {
+  text-align: left;
+}
+
+#about img {
+  text-align: center;
+  width: 80%;
+}
+#about h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*********************MENU*********************/
+#menu {
+  background: #000;
+}
