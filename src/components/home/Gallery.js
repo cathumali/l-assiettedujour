@@ -1,7 +1,6 @@
 import React from "react";
 
 function Gallery() {
-  console.log(Object.keys(gallery_images));
   return (
     <React.Fragment>
       <section id="gallery">
