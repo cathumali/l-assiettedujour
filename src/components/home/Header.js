@@ -37,13 +37,13 @@ function Header() {
 }
 
 const action_style = {
-  fontSize: 20,
+  fontSize: "0.7em",
   textDecoration: "none",
   color: "#d9b04f"
 };
 
 const call_style = {
-  fontSize: 100,
+  fontSize: "2em",
   fontFamily: "'Lobster', cursive"
 };
 
