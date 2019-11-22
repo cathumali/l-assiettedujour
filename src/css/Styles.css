@@ -1,7 +1,35 @@
 body,
 #about {
   color: #000;
+  background-color: #ccc;
 }
+.muli {
+  font-family: "Muli", sans-serif;
+}
+.open_sans {
+  font-family: "Open Sans", sans-serif;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+}
+.lobster {
+  color: #000;
+  font-family: Lobster, cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 1em;
+  text-transform: capitalize;
+}
+
 /*********************HEADER AND NAV*********************/
 
 header {
@@ -14,6 +42,13 @@ header {
   display: inline-block;
   z-index: 1;
 }
+header ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 header li {
   text-align: left;
 }
@@ -24,17 +59,18 @@ header a {
   margin: 40px 0;
 }
 .header-intro p {
-  font-size: 0.8em;
+  font-family: "Muli", sans-serif;
+  font-size: 0.7em;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
 .circle {
   width: 15px;
   height: 15px;
-  background-color: gray;
+  background-color: #808080;
   border-radius: 7px;
-  display: inline-block;
-  margin-top: 10px;
+  float: left;
 }
 
 li img /**Nav bar circle img size**/
@@ -47,31 +83,37 @@ a {
   text-decoration: none;
   font-size: 13px;
 }
-ul	/**Nav bar position**/
-			 {
-  background-color: none;
-  position: absolute;
-  left: 32%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+
 /**The pop up Section names in nav bar**/
 .htooltip {
   visibility: hidden;
   width: 50px;
-  color: white;
-  padding: 5px 0;
-  text-decoration: none;
+  color: #808080;
+  letter-spacing: 0.2em;
+  margin-left: 10px;
+
   font-weight: bold;
-  margin: 2px;
-  letter-spacing: 3px;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-shadow: 0 0 1.5px #313133 !important;
+
   text-transform: uppercase;
+  transition: width 2s;
+  float: left;
+  width: auto;
+}
+.homenav {
+  display: inline-block;
 }
 .homenav:hover .htooltip {
   visibility: visible;
 }
 .homenav:hover .circle {
-  background-color: white;
+  background-color: #4f4a4a;
+}
+.homenav img {
+  float: left;
+  margin-top: 0;
 }
 #home {
   background-color: black;
@@ -105,6 +147,10 @@ ul	/**Nav bar position**/
   margin: 0;
   border: 1px solid white;
 }
+.call h1 {
+  font-size: 3em;
+  font-family: Lobster, cursive;
+}
 .action {
   padding: 0;
   margin: 0 auto;
@@ -113,6 +159,13 @@ ul	/**Nav bar position**/
   padding-bottom: 5px;
   border: 1px solid white;
 }
+.action a {
+  color: #fff;
+  font-size: 0.6em;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
 /**********************HEADER SLIDER ANIMATION***************************/
 
 .slide1,
@@ -192,19 +245,27 @@ ul	/**Nav bar position**/
 /*********************ABOUT*********************/
 #about {
   text-align: left;
+  background-color: #fff;
 }
 
 #about img {
   text-align: center;
   width: 80%;
 }
+
 #about h2 {
+  font-family: Lobster, cursive;
+  font-size: 3rem;
   font-weight: 700;
-  text-transform: uppercase;
 }
+#about h5,
+#about p {
+  font-family: "Muli", sans-serif;
+}
+
 /*********************MENU*********************/
 #menu {
-  background: #000;
+  background: #201f1f;
 }
 #menu img {
   width: 100%;
@@ -214,7 +275,7 @@ ul	/**Nav bar position**/
   background-size: cover;
   object-fit: fill;
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
   padding: 0;
   margin: 0;
   background-color: white;
@@ -239,7 +300,6 @@ ul	/**Nav bar position**/
   background-color: yellow;
   position: relative;
   overflow: visible;
-  /* width: 200px; */
   height: 130px;
   left: 0;
   padding-bottom: 30px;
@@ -276,24 +336,19 @@ ul	/**Nav bar position**/
 }
 /*********************PLACE*********************/
 #place {
+  padding: 0;
+}
+#place .place-image {
   background-color: black;
   background: url("../images/place.jpg") center center no-repeat scroll;
   background-size: cover;
 
   height: auto;
   padding: 0;
-
   width: 100%;
   height: 600px;
   position: relative;
 }
-/* #bottomdiv {
-  background: url("../images/place.jpg") center center no-repeat scroll;
-  background-size: 100%;
-  width: 100%;
-  height: 600px;
-  position: relative;
-} */
 /*********************MAP*********************/
 #location {
   height: 300px;
@@ -331,14 +386,16 @@ iframe {
     no-repeat top;
   padding-top: 30px;
   background-size: cover;
+  font-family: "Muli", sans-serif;
 }
 
 .footer-wrap h3 {
   color: #fff;
-  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .footer-wrap p {

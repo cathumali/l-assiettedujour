@@ -7,6 +7,7 @@ function Menu() {
         <div className="row">
           <div className="col-sm-4 offset-sm-2">
             <img
+              alt=""
               className="center-block frenchdish img-responsive"
               src={menu_images.frenchdish}
             />
@@ -16,6 +17,7 @@ function Menu() {
         <div className="row">
           <div className="col-sm-4 offset-sm-6">
             <img
+              alt=""
               className="center-block others img-responsive"
               src={menu_images.others}
             />
@@ -25,6 +27,7 @@ function Menu() {
         <div className="row">
           <div className="col-sm-4 offset-sm-2">
             <img
+              alt=""
               className="center-block others img-responsive"
               src={menu_images.specialsushi}
             />
@@ -34,6 +37,7 @@ function Menu() {
         <div className="row">
           <div className="col-sm-4 offset-sm-6">
             <img
+              alt=""
               className="center-block others img-responsive"
               src={menu_images.salad}
             />
@@ -43,6 +47,7 @@ function Menu() {
         <div className="row">
           <div className="col-sm-4 offset-sm-2">
             <img
+              alt=""
               className="center-block dessert img-responsive"
               src={menu_images.dessert}
             />
@@ -52,6 +57,7 @@ function Menu() {
         <div className="row">
           <div className="col-sm-4 offset-sm-6">
             <img
+              alt=""
               className="center-block cake img-responsive"
               src={menu_images.cake}
             />

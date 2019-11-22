@@ -17,17 +17,14 @@ function Header() {
         <div className="overhome col-md-12">
           <div id="cName" className="col-md-7 ">
             <div className="call">
-              <h1 style={call_style}>L'assiette Dujour</h1>
+              <h1>L'assiette Dujour</h1>
             </div>
             <div className="header-intro">
               <p>The Finest French Cuisine and more </p>
               <p> Best in the city. Friendly team. Stylish setting</p>
             </div>
             <div className="action">
-              <a href="#menu" style={action_style}>
-                {" "}
-                Discover our menu{" "}
-              </a>
+              <a href="#menu"> Discover our menu </a>
             </div>
           </div>
         </div>
@@ -35,16 +32,5 @@ function Header() {
     </React.Fragment>
   );
 }
-
-const action_style = {
-  fontSize: "0.7em",
-  textDecoration: "none",
-  color: "#d9b04f"
-};
-
-const call_style = {
-  fontSize: "2em",
-  fontFamily: "'Lobster', cursive"
-};
 
 export default Header;

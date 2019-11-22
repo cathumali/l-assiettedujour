@@ -5,7 +5,7 @@ import insta_svg from "../../images/insta.svg";
 
 function NavBar() {
   return (
-    <header>
+    <header className="muli">
       <ul>
         <li>
           <a className="homenav" href="#home">
@@ -58,19 +58,19 @@ function NavBar() {
         <br />
         <li>
           <a className="homenav" href="https://www.facebook.com/">
-            <img src={fb_svg} />
+            <img alt="" src={fb_svg} />
             <span className="htooltip"> FACEBOOK </span>
           </a>
         </li>
         <li>
           <a className="homenav" href="https://www.twitter.com/">
-            <img src={tw_svg} />
+            <img alt="" src={tw_svg} />
             <span className="htooltip"> TWITTER </span>
           </a>
         </li>
         <li>
           <a className="homenav" href="https://www.instagram.com/instagram/">
-            <img src={insta_svg} />
+            <img alt="" src={insta_svg} />
             <span className="htooltip"> INSTAGRAM </span>{" "}
           </a>
         </li>

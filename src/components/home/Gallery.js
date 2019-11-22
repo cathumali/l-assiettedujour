@@ -7,9 +7,14 @@ function Gallery() {
       <section id="gallery">
         <div className="container ">
           <div className="row">
+            <div className="col-12">
+              <h2 className="lobster">Gallery</h2>
+            </div>
+          </div>
+          <div className="row">
             {gallery_images.map((image, ie) => (
               <div className="col-12 col-sm-4 shine_me" key={ie}>
-                <img src={image} className="img-responsive galimage" />
+                <img alt="" src={image} className="img-responsive galimage" />
                 <i className="shine_effect"></i>
               </div>
             ))}
@@ -18,6 +23,12 @@ function Gallery() {
       </section>
 
       <section id="place">
+        <div className="row">
+          <div className="col-12">
+            <h2 className="lobster">The Place</h2>
+          </div>
+        </div>
+        <div className="place-image"></div>
         {/* <div id="bottomdiv" className="img-responsive"></div> */}
       </section>
 
